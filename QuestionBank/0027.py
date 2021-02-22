@@ -21,7 +21,7 @@ class Solution:
     def removeElement(nums: List[int], val: int) -> int:
         deltimes = 0
         for index in range(len(nums)):
-            index = index - deltimes
+            index -= deltimes
             if nums[index] == val:
                 del nums[index]
                 deltimes += 1
